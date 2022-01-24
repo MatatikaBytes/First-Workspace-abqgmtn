@@ -1,3 +1,10 @@
 version: 1
 send_anonymous_usage_stats: true
 project_id: 15b504fe-7281-4ca0-b488-4adf1853aa45
+plugins:
+  extractors:
+  - name: tap-spreadsheets-anywhere
+    pip_url: git+https://github.com/ets/tap-spreadsheets-anywhere.git
+  files:
+  - name: dbt
+    pip_url: git+https://gitlab.com/meltano/files-dbt.git@config-version-2
